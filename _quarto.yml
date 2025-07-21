@@ -1,0 +1,43 @@
+project:
+  type: manuscript
+  output-dir: outputs
+
+format:
+  html:
+    theme: ['sandstone', assets/custom.scss]
+    page-layout: full
+    smooth-scroll: true
+    html-math-method: katex
+    page-navigation: true
+
+  pdf:
+    documentclass: scrartcl
+    keep-tex: true
+    toc: true #Inhaltsverzeichnis ausgeben?
+    toc-depth: 3 #Tiefe des Inhaltsverzeichnisses
+    lof: true #Abbildungsverzeichnis ausgeben?
+    lot: true #Tabellenverzeichnis ausgeben?
+    mainfont: "TeX Gyre Termes" #Schriftart
+    sansfont: "TeX Gyre Termes" #Schriftart für Überschriften
+    monofont: "Inconsolata" #Schriftart für Code
+    fontsize: 12pt
+    classoption: [oneside] #für schriftliche Abgaben twoside
+    papersize: a4
+    indent: true #regelt, ob es Einzug (true) oder Platz (false) zwischen Absätzen gibt
+    linestretch: 1.5
+    colorlinks: true
+    linkcolor: DarkGreen
+    filecolor: DarkGreen
+    urlcolor: DarkGreen
+    link-citations: true
+    citecolor: DarkGreen
+    toccolor: DarkGreen
+    fig-cap-location: top
+    tbl-cap-location: top
+    fig-pos: htbp
+    
+    #Title Page
+    template-partials:
+      - assets/before-body.tex
+      
+# See https://cameronpatrick.com/post/2023/07/quarto-thesis-formatting/

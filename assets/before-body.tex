@@ -1,0 +1,55 @@
+$if(has-frontmatter)$
+\frontmatter
+$endif$
+
+$if(title)$
+\cleardoublepage %nächste SEite beginnt auf einer rechten Seite (im zweiseitigen Modus)
+\thispagestyle{empty} %entfernt Seitenzahl und andere Kopf- oder Fußzeilen
+
+\vspace*{2cm} %Abstand zum oberen Seitenrand, ggf. anpassen
+\begin{center}
+  {\Huge\bfseries $title$ \par} %Titel
+  $if(subtitle)$
+    \vspace{2ex}
+    {\Large\bfseries $subtitle$ \par} %Untertitel
+  $endif$
+\end{center}
+
+\vspace{3cm} %Abstand zwischen Titelblock und Autorenblock, ggf. anpassen
+
+%Autoren, untereinander
+$for(by-author)$
+\begin{center}
+  {\large\textbf{$by-author.name.literal$}}\\
+  $if(by-author.orcid)$ Matrikelnummer: $by-author.orcid$\\ $endif$
+  $if(by-author.email)$ E-Mail: $by-author.email$\\ $endif$
+  $for(by-author.affiliations)$
+    $if(by-author.affiliations.name)$ $by-author.affiliations.name$\\ $endif$
+  $endfor$
+\end{center}
+
+\vspace{2ex}
+$endfor$
+
+\vfill
+
+$if(date)$
+\begin{center}
+  {\large\textbf{$date$}}
+\end{center}
+$endif$
+
+\vfill
+
+% Footer mit Dozent, Veranstaltung, Semester
+\begin{flushleft}
+  \textbf{$university$}\\
+  \textbf{Dozent*in:} $professor$ \\
+  \textbf{Veranstaltung:} $class$ \\
+  \textbf{Semester:} $semester$
+\end{flushleft}
+
+$endif$
+
+\cleardoublepage
+\pagenumbering{Roman} %Seitennummerierung auf Römisch

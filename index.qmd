@@ -1,0 +1,53 @@
+---
+title: "Titel"
+subtitle: "Untertitel"
+
+author:
+  - name: "Vorname Nachname"
+    email: "email@email.de"
+    orcid: "12345" # hier die Matrikelnummer rein
+  
+  - name: "Max Mustermann"
+    email: "email@email.de"
+    orcid: "23456" # hier die Matrikelnummer rein
+
+university: "Philipps-Universität Marburg"
+professor: "Prof. Dr. Abc"
+class: "Einführung in die Politikwissenschaft"
+semester: "Wintersemester 2025/26"
+
+date: "2025-07-21"
+date-format: "DD. MMMM YYYY"
+abstract: ""
+    
+bibliography: references.bib
+link-bibliography: true
+csl: assets/springervs.csl
+lang: de-DE
+number-sections: true
+highlight-style: github
+
+knitr: 
+  opts_chunk: 
+    out.width: "50%" #bei Bedarf anpassen
+
+execute: 
+  echo: false
+  warning: false
+  message: false
+  freeze: false
+notebook-links: false
+editor: visual
+---
+
+{{< pagebreak >}}
+
+\cleardoublepage \pagenumbering{arabic} \setcounter{page}{1}
+
+# Einleitung
+
+# Hauptteil
+
+# Schluss
+
+# Literatur {.unnumbered}

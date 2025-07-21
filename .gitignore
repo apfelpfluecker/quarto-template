@@ -1,0 +1,10 @@
+/.quarto/
+/outputs/
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+*.pdf
+*.html
+*.log
