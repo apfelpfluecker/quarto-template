@@ -40,4 +40,8 @@ format:
     template-partials:
       - assets/before-body.tex
       
+    include-in-header: 
+      - text: |
+          \PassOptionsToPackage{ngerman}{babel}
+      #das ist für die korrekte Silbentrennung. Achtung! babel-german muss installiert sein
 # See https://cameronpatrick.com/post/2023/07/quarto-thesis-formatting/

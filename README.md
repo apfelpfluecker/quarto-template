@@ -4,6 +4,8 @@ Dieses Repository ist ein Template, um mithilfe von [Quarto](https://quarto.org)
 
 Das, was hier zu finden ist, spiegelt meinen aktuellen Wissensstand wieder, wie ich mit möglichst einfachen und niedrigschwelligen Mitteln technisch sehr schöne Dokumente erstellen kann, vor allem um damit Universitäts-Abgaben zu schreiben und mich nicht mit MS Word oder LO Writer rumschlagen zu müssen. Vielleicht hat dieses Repo auch einen Mehrwert für andere – das würde mich sehr freuen. Um den Einstieg zu erleichtern, habe ich versucht, die wichtigen Sachen, die man bei Bedarf ggf. ändern will, mithilfe von Kommentierungen verständlich zu machen. Im Zweifel schreibt mich an oder lest in der sehr detailierten [Doku von Quarto](https://quarto.org/docs/guide/) nach, die ich an dieser Stelle ausdrücklich empfehle.
 
+## Struktur des Repositorys
+
 Die konzipierte Struktur des Repos ist wie folgt (es sind nicht alle Ordner online, weil sie leer sind):
 
 - `/assets`: Der Ordner ist für Skripte und ähnliches gedacht, die zum Bauen des Templates erforderlich sind.
@@ -18,5 +20,9 @@ Die konzipierte Struktur des Repos ist wie folgt (es sind nicht alle Ordner onli
 - `README.md`: Das ist diese Datei. ;)
 - `references.bib`: Das ist die Bibtex-Datei, in der die Zitationen gespeichert werden. Ich empfehle dringend, für Zitationen [Zotero](https://www.zotero.org/) zu nutzen, das hat nicht nur hierfür enorm viele Vorteile. Leider hat die Zotero-Integration von RStudio relativ viele Bugs, deswegen empfehle ich, die Zitationen als BetterBibLaTeX oder BibLaTeX aus Zotero zu exportieren. Ich habe noch keine optimale Lösung gefunden, aber das scheint mir im Moment die beste. Beim (Better-)BibTex-Export gehen leider wichtige Daten verloren.
 - `.gitignore`: Das ist die gitignore-Datei. Wenn ihr Git kennt, brauche ich sie nicht erklären, wenn nicht, dann ignoriert sie einfach.
+
+## Wichtige Hinweise
+
+Es ist unerlässlich, das `babel-german` LaTeX-Package zu installieren, damit die Silbentrennung funktioniert. Dafür in RStudio (oder irgendwo anders) ins Terminal gehen und eingeben: `tlmgr install babel-german`. That’s it.
 
 Ansonsten habt Spaß beim Schreiben und modifiziert gerne alles, was euch nicht passt. :)
