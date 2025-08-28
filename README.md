@@ -25,4 +25,8 @@ Die konzipierte Struktur des Repos ist wie folgt (es sind nicht alle Ordner onli
 
 Es ist unerlässlich, das `babel-german` LaTeX-Package zu installieren, damit die Silbentrennung funktioniert. Dafür in RStudio (oder irgendwo anders) ins Terminal gehen und eingeben: `tlmgr install babel-german`. That’s it.
 
+## Lizenz
+
+Dieses Template darf nach Belieben und ohne Nennung des Autors verwendet, bearbeitet, weiterverbreitet und veröffentlicht werden – auch für kommerzielle Zwecke.
+
 Ansonsten habt Spaß beim Schreiben und modifiziert gerne alles, was euch nicht passt. :)
