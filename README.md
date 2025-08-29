@@ -27,6 +27,6 @@ Es ist unerlässlich, das `babel-german` LaTeX-Package zu installieren, damit di
 
 ## Lizenz
 
-Dieses Template darf nach Belieben und ohne Nennung des Autors verwendet, bearbeitet, weiterverbreitet und veröffentlicht werden – auch für kommerzielle Zwecke.
+Dieses Template steht unter der CC0 1.0 Lizenz.
 
 Ansonsten habt Spaß beim Schreiben und modifiziert gerne alles, was euch nicht passt. :)
