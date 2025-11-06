@@ -13,7 +13,7 @@ Die konzipierte Struktur des Repos ist wie folgt (es sind nicht alle Ordner onli
   - `custom.scss`: Das tut Dinge fürs HTML-Layout, ist aber eigentlich nicht so wichtig, da für mich der PDF-Output im Vordergrung steht.
   - `springervs.csl`: Das ist der Zitierstil, ich hab jetzt mal einen von Springer VS genommen, aber da kann natürlich jeder beliebige genutzt werden. Im [Zotero Style Repository](https://www.zotero.org/styles) für Zitierstile finden sich quasi alle.
 - `/images`: Der Ordner ist vorgesehen für Grafiken. Da man die in der Regel vermutlich direkt im Quarto-Dokument erstellt, braucht man den Ordner vermutlich nicht so oft.
-- `/outputs`: Der Outputs-Ordner wird automatisch beim Rendern erstellt. Darin findet man dann das gerenderte Dokument, den Output eben.
+- `/outputs`: Der Outputs-Ordner wird automatisch beim Rendern erstellt. Darin findet man dann das gerenderte Dokument, den Output eben. Der Name der Output-PDF kann in der Datei `_quarto.yml` konfiguriert werden (unten im PDF-Block).
 - `index.qmd`: Das ist das Quarto-Dokument, in dem die Hausarbeit, das Essay oder was auch immer geschrieben wird.
 - `_quarto.yml`: Das ist die Projekt-YML-Datei, in der ganz viele Einstellungen stehen, darunter Schriftgröße, Zeilenabstand, aber auch, ob ein Inhalts-, Abbildungs-, und/oder Tabellenverzeichnis erstellt werden soll. Allerdings gibt es auch einen YML-Block in der `index.qmd`-Datei, da sind dann vor allem dokumentspezifische Einstellungen drin (Autor\*inneninfos etc., Titel, Untertitel, …). Diese YML-Doppelstruktur macht im konkreten Fall nicht so richtig viel Sinn, aber für größere Dokumente, die eher in Richtung Masterarbeit oder Buch gehen, macht das dann mehr Sinn. So ist es evtl. ein kleines bisschen unübersichtlich, aber ich hoffe, nicht *zu* unübersichtlich.
 - `quarto-template.Rproj`: Das ist die Projektdatei. Das Projekt sollte immer mit dieser Datei geöffnet werden. Gerne einfach nach Bedarf umbenennen.
@@ -23,7 +23,7 @@ Die konzipierte Struktur des Repos ist wie folgt (es sind nicht alle Ordner onli
 
 ## Wichtige Hinweise
 
-Es ist unerlässlich, das `babel-german` LaTeX-Package zu installieren, damit die Silbentrennung funktioniert. Dafür in RStudio (oder irgendwo anders) ins Terminal gehen und eingeben: `tlmgr install babel-german`. That’s it.
+Es ist unerlässlich, das `babel-german` LaTeX-Package zu installieren, damit die Silbentrennung funktioniert. Dafür in Positron / RStudio / VS Code (oder irgendwo anders) ins Terminal gehen und eingeben: `tlmgr install babel-german`. That’s it.
 
 ## Lizenz
 
